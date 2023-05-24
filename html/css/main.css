@@ -1,0 +1,284 @@
+@font-face {
+	font-family: 'Brandon Grotesque';
+	src: url('../fonts/brandon_grotesque.otf');
+}
+
+@font-face {
+	font-family: 'Brandon Grotesque';
+	src: url('../fonts/brandon_grotesque_bold.otf');
+	font-weight: bold;
+}
+
+
+*{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-family: 'Brandon Grotesque', sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: #ffe1f0;
+    width: 100vw;
+}
+
+h1{
+    color: #5c5c5c;
+}
+
+.menu{
+    background-color: #ffe1f0;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: grid;
+}
+
+.menu div{
+    border: 1px solid #5c5c5c;
+    cursor: pointer;
+}
+
+.menu:first-child{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.menu:last-child{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.menutext{
+    color:#5c5c5c;
+    font-size: 2em;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.submit{
+    background-color: #d4f0fe;
+    border: 1px solid #5c5c5c;
+    color: #5c5c5c;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type=text],select,input[type=number]{
+    border: 1px solid #848484; 
+    -webkit-border-radius: 30px; 
+    -moz-border-radius: 30px;
+    border-radius: 30px; 
+    outline:0; 
+    height:25px; 
+    width: 150px; 
+    padding-left:10px; 
+    padding-right:10px; 
+    margin-right: 10px;
+}
+
+select{
+	width:172px;
+	height:29px;
+}
+
+
+button,.search{
+    background-color: #d4f0fe;
+    padding: 15px 32px;
+    border: none;
+    color: #5c5c5c;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #5c5c5c;
+}
+
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.yellow{
+    color: yellow;
+}
+  
+table{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+	table-layout:fixed;
+}
+.regtable{
+    height: 70vh;
+}
+
+.regtable th{
+    font-size: 1.2em;
+}
+
+td, th {
+border: 1px solid #ddd;
+padding: 8px;
+}
+
+tr:nth-child(even){background-color: #d4f0fe;}
+
+tr:not(:last-child):hover {background-color: #ddd;}
+
+th{
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: center;
+background-color: grey;
+color: white;
+}
+
+.minitable{
+    width: 300px;
+	margin-bottom: 10px;
+	margin-top: 0px;
+}
+
+
+li{
+	padding-left:-20px;
+
+}
+
+.smallbutton{
+	all: unset;
+	border: 1px solid #5c5c5c;
+	border-radius: 1337px;
+	width:30px;
+	height:30px;
+	color: black;
+	font-size: 1.5em;
+	vertical-align: middle;
+}
+
+.inactive{
+	background-color: lightgrey;
+}
+
+input[type="checkbox"]{
+	-ms-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	-webkit-box-sizing:content-box; 
+	box-sizing:content-box;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid black;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #77DD77;
+}
+
+#qr-canvas{
+	width: 70vw;
+	margin: 0 auto;
+	border: 5px solid #d4f0fe;
+
+}
+
+@media screen and (min-width:1200px){
+	.locgrid{
+		display:grid;
+		grid-template-columns: repeat(4,1fr);
+	}
+	
+	.menutext{
+		font-size:3em;
+	}
+
+
+}
+
+.exportTable{
+	width:40%;
+	border: 2px solid grey;
+}
+
+a.selected {
+  background-color:#1F75CC;
+  color:white;
+  z-index:100;
+}
+
+label {
+  display: block;
+  margin-bottom: 3px;
+  padding-left: 15px;
+  text-indent: -15px;
+}
+
+.profile{
+    height:80vh;
+}
+.safetyHeader{
+    margin:10px;
+}
+.canbox{
+    float:left;
+    width:50%;
+    height:80vh;
+    margin:0;
+    position: relative;
+}
+#chemStructure{
+    padding: 0;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width:100%;
+}
+#basicInfo{
+    height:100%;
+    width:50%;
+}
+#basicInfo th{
+    width:30%;
+    font-size: 1.5em;
+}
+#basicInfo td{
+    font-size:1.5em;
+}
+@media only screen and (max-width:850px) {
+    .canbox{
+        width:100%;
+        position:relative;
+        height:auto;
+    }
+    #basicInfo{
+        width:100%;
+    }
+    #chemStructure{
+        margin-bottom:20px;
+        margin-top:20px;
+        position:relative;
+    }
+    .profile{
+        height: auto;
+    }
+}
